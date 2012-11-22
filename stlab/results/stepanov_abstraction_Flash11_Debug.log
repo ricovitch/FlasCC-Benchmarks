@@ -1,0 +1,60 @@
+FLASH (manufacturer=Adobe Windows, OS=Windows 7, playerType=PlugIn 64bits (DEBUG), version=WIN 11,1,102,55)
+stepanov_abstraction 1000000
+
+test                        description   absolute   operations   ratio with
+number                                    time       per second   test0
+
+ 0                     "double pointer"   1.22 sec   164.20 M     1.00
+ 1               "double pointer_class"   1.19 sec   168.21 M     0.98
+ 2         "DoubleValueWrapper pointer"   1.17 sec   170.79 M     0.96
+ 3   "DoubleValueWrapper pointer_class"   1.22 sec   164.47 M     1.00
+ 4       "DoubleValueWrapper10 pointer"   1.19 sec   167.50 M     0.98
+ 5 "DoubleValueWrapper10 pointer_class"   1.20 sec   166.94 M     0.98
+
+Total absolute time for Abstraction Accumulate: 7.19 sec
+
+Abstraction Accumulate Penalty: 0.98
+
+test                                       description   absolute   operations   ratio with
+number                                                   time       per second   test0
+
+ 0                     "insertion_sort double pointer"   0.79 sec    0.13 M     1.00
+ 1               "insertion_sort double pointer_class"   0.78 sec    0.13 M     0.99
+ 2         "insertion_sort DoubleValueWrapper pointer"   0.67 sec    0.15 M     0.85
+ 3   "insertion_sort DoubleValueWrapper pointer_class"   0.67 sec    0.15 M     0.85
+ 4       "insertion_sort DoubleValueWrapper10 pointer"   0.68 sec    0.15 M     0.86
+ 5 "insertion_sort DoubleValueWrapper10 pointer_class"   0.71 sec    0.14 M     0.90
+
+Total absolute time for Abstraction Insertion Sort: 4.29 sec
+
+Abstraction Insertion Sort Penalty: 0.89
+
+------------------------ 30 iterations
+test                                  description   absolute   operations   ratio with
+number                                              time       per second   test0
+
+ 0                     "quicksort double pointer"   7.68 sec    0.06 M     1.00
+ 1               "quicksort double pointer_class"   7.13 sec    0.07 M     0.93
+ 2         "quicksort DoubleValueWrapper pointer"   8.57 sec    0.06 M     1.11
+ 3   "quicksort DoubleValueWrapper pointer_class"   8.72 sec    0.06 M     1.13
+ 4       "quicksort DoubleValueWrapper10 pointer"   8.67 sec    0.06 M     1.13
+ 5 "quicksort DoubleValueWrapper10 pointer_class"   8.58 sec    0.06 M     1.12
+
+Total absolute time for Abstraction Quicksort: 49.35 sec
+
+Abstraction Quicksort Penalty: 1.08
+
+------------------------ 10000 iterations
+test                                  description   absolute   operations   ratio with
+number                                              time       per second   test0
+
+ 0                     "heap_sort double pointer"   5.75 sec    3.48 M     1.00
+ 1               "heap_sort double pointer_class"   8.37 sec    2.39 M     1.46
+ 2         "heap_sort DoubleValueWrapper pointer"   8.56 sec    2.34 M     1.49
+ 3   "heap_sort DoubleValueWrapper pointer_class"   8.27 sec    2.42 M     1.44
+ 4       "heap_sort DoubleValueWrapper10 pointer"   8.69 sec    2.30 M     1.51
+ 5 "heap_sort DoubleValueWrapper10 pointer_class"   8.53 sec    2.34 M     1.48
+
+Total absolute time for Abstraction Heap Sort: 48.17 sec
+
+Abstraction Heap Sort Penalty: 1.48

@@ -1,0 +1,305 @@
+loop_unroll.exe 8000 
+
+test                description   absolute   operations   ratio with
+number                            time       per second   test0
+
+ 0  "int32_t for loop unroll 1"   0.03 sec   2064.52 M     1.00
+ 1  "int32_t for loop unroll 2"   0.03 sec   2064.52 M     1.00
+ 2  "int32_t for loop unroll 3"   0.03 sec   2560.00 M     0.81
+ 3  "int32_t for loop unroll 4"   0.02 sec   2909.09 M     0.71
+ 4  "int32_t for loop unroll 5"   0.02 sec   2782.61 M     0.74
+ 5  "int32_t for loop unroll 6"   0.02 sec   2782.61 M     0.74
+ 6  "int32_t for loop unroll 7"   0.02 sec   2782.61 M     0.74
+ 7  "int32_t for loop unroll 8"   0.02 sec   2782.61 M     0.74
+ 8  "int32_t for loop unroll 9"   0.02 sec   2782.61 M     0.74
+ 9 "int32_t for loop unroll 10"   0.02 sec   2909.09 M     0.71
+10 "int32_t for loop unroll 11"   0.02 sec   2782.61 M     0.74
+11 "int32_t for loop unroll 12"   0.02 sec   2782.61 M     0.74
+12 "int32_t for loop unroll 13"   0.02 sec   2782.61 M     0.74
+13 "int32_t for loop unroll 14"   0.02 sec   2666.67 M     0.77
+14 "int32_t for loop unroll 15"   0.03 sec   2560.00 M     0.81
+15 "int32_t for loop unroll 16"   0.02 sec   2666.67 M     0.77
+16 "int32_t for loop unroll 17"   0.02 sec   2782.61 M     0.74
+17 "int32_t for loop unroll 18"   0.02 sec   2782.61 M     0.74
+18 "int32_t for loop unroll 19"   0.02 sec   2782.61 M     0.74
+19 "int32_t for loop unroll 20"   0.02 sec   2782.61 M     0.74
+20 "int32_t for loop unroll 21"   0.02 sec   2782.61 M     0.74
+21 "int32_t for loop unroll 22"   0.02 sec   2666.67 M     0.77
+22 "int32_t for loop unroll 23"   0.02 sec   2782.61 M     0.74
+23 "int32_t for loop unroll 24"   0.02 sec   2782.61 M     0.74
+24 "int32_t for loop unroll 25"   0.03 sec   2064.52 M     1.00
+25 "int32_t for loop unroll 26"   0.02 sec   2782.61 M     0.74
+26 "int32_t for loop unroll 27"   0.02 sec   2782.61 M     0.74
+27 "int32_t for loop unroll 28"   0.02 sec   2909.09 M     0.71
+28 "int32_t for loop unroll 29"   0.02 sec   2782.61 M     0.74
+29 "int32_t for loop unroll 30"   0.02 sec   2782.61 M     0.74
+30 "int32_t for loop unroll 31"   0.02 sec   2782.61 M     0.74
+31 "int32_t for loop unroll 32"   0.02 sec   2909.09 M     0.71
+
+Total absolute time for int32_t for loop unrolling: 0.76 sec
+
+test                  description   absolute   operations   ratio with
+number                              time       per second   test0
+
+ 0  "int32_t while loop unroll 1"   0.02 sec   2666.67 M     1.00
+ 1  "int32_t while loop unroll 2"   0.03 sec   2133.33 M     1.25
+ 2  "int32_t while loop unroll 3"   0.03 sec   2560.00 M     1.04
+ 3  "int32_t while loop unroll 4"   0.02 sec   2782.61 M     0.96
+ 4  "int32_t while loop unroll 5"   0.02 sec   2909.09 M     0.92
+ 5  "int32_t while loop unroll 6"   0.02 sec   2782.61 M     0.96
+ 6  "int32_t while loop unroll 7"   0.02 sec   2782.61 M     0.96
+ 7  "int32_t while loop unroll 8"   0.02 sec   2782.61 M     0.96
+ 8  "int32_t while loop unroll 9"   0.02 sec   2782.61 M     0.96
+ 9 "int32_t while loop unroll 10"   0.02 sec   2782.61 M     0.96
+10 "int32_t while loop unroll 11"   0.02 sec   2666.67 M     1.00
+11 "int32_t while loop unroll 12"   0.02 sec   2666.67 M     1.00
+12 "int32_t while loop unroll 13"   0.02 sec   2666.67 M     1.00
+13 "int32_t while loop unroll 14"   0.02 sec   2909.09 M     0.92
+14 "int32_t while loop unroll 15"   0.02 sec   2782.61 M     0.96
+15 "int32_t while loop unroll 16"   0.02 sec   2666.67 M     1.00
+16 "int32_t while loop unroll 17"   0.02 sec   2782.61 M     0.96
+17 "int32_t while loop unroll 18"   0.02 sec   2666.67 M     1.00
+18 "int32_t while loop unroll 19"   0.02 sec   2782.61 M     0.96
+19 "int32_t while loop unroll 20"   0.02 sec   2909.09 M     0.92
+20 "int32_t while loop unroll 21"   0.02 sec   2782.61 M     0.96
+21 "int32_t while loop unroll 22"   0.02 sec   2782.61 M     0.96
+22 "int32_t while loop unroll 23"   0.02 sec   2782.61 M     0.96
+23 "int32_t while loop unroll 24"   0.02 sec   2909.09 M     0.92
+24 "int32_t while loop unroll 25"   0.02 sec   2782.61 M     0.96
+25 "int32_t while loop unroll 26"   0.02 sec   2909.09 M     0.92
+26 "int32_t while loop unroll 27"   0.02 sec   2782.61 M     0.96
+27 "int32_t while loop unroll 28"   0.02 sec   2782.61 M     0.96
+28 "int32_t while loop unroll 29"   0.02 sec   2782.61 M     0.96
+29 "int32_t while loop unroll 30"   0.02 sec   2782.61 M     0.96
+30 "int32_t while loop unroll 31"   0.03 sec   2560.00 M     1.04
+31 "int32_t while loop unroll 32"   0.03 sec   2560.00 M     1.04
+
+Total absolute time for int32_t while loop unrolling: 0.75 sec
+
+test               description   absolute   operations   ratio with
+number                           time       per second   test0
+
+ 0  "int32_t do loop unroll 1"   0.06 sec   1163.64 M     1.00
+ 1  "int32_t do loop unroll 2"   0.03 sec   2064.52 M     0.56
+ 2  "int32_t do loop unroll 3"   0.02 sec   2666.67 M     0.44
+ 3  "int32_t do loop unroll 4"   0.02 sec   2782.61 M     0.42
+ 4  "int32_t do loop unroll 5"   0.02 sec   2909.09 M     0.40
+ 5  "int32_t do loop unroll 6"   0.02 sec   2782.61 M     0.42
+ 6  "int32_t do loop unroll 7"   0.02 sec   2782.61 M     0.42
+ 7  "int32_t do loop unroll 8"   0.02 sec   2782.61 M     0.42
+ 8  "int32_t do loop unroll 9"   0.02 sec   2909.09 M     0.40
+ 9 "int32_t do loop unroll 10"   0.02 sec   2782.61 M     0.42
+10 "int32_t do loop unroll 11"   0.02 sec   2782.61 M     0.42
+11 "int32_t do loop unroll 12"   0.02 sec   2666.67 M     0.44
+12 "int32_t do loop unroll 13"   0.02 sec   2666.67 M     0.44
+13 "int32_t do loop unroll 14"   0.02 sec   2782.61 M     0.42
+14 "int32_t do loop unroll 15"   0.02 sec   2666.67 M     0.44
+15 "int32_t do loop unroll 16"   0.02 sec   2666.67 M     0.44
+16 "int32_t do loop unroll 17"   0.02 sec   2909.09 M     0.40
+17 "int32_t do loop unroll 18"   0.02 sec   2782.61 M     0.42
+18 "int32_t do loop unroll 19"   0.02 sec   2782.61 M     0.42
+19 "int32_t do loop unroll 20"   0.02 sec   2666.67 M     0.44
+20 "int32_t do loop unroll 21"   0.03 sec   2560.00 M     0.45
+21 "int32_t do loop unroll 22"   0.02 sec   2666.67 M     0.44
+22 "int32_t do loop unroll 23"   0.02 sec   2782.61 M     0.42
+23 "int32_t do loop unroll 24"   0.02 sec   2909.09 M     0.40
+24 "int32_t do loop unroll 25"   0.02 sec   2666.67 M     0.44
+25 "int32_t do loop unroll 26"   0.02 sec   2666.67 M     0.44
+26 "int32_t do loop unroll 27"   0.02 sec   2666.67 M     0.44
+27 "int32_t do loop unroll 28"   0.02 sec   2909.09 M     0.40
+28 "int32_t do loop unroll 29"   0.02 sec   2782.61 M     0.42
+29 "int32_t do loop unroll 30"   0.02 sec   2782.61 M     0.42
+30 "int32_t do loop unroll 31"   0.02 sec   2909.09 M     0.40
+31 "int32_t do loop unroll 32"   0.02 sec   2782.61 M     0.42
+
+Total absolute time for int32_t do loop unrolling: 0.78 sec
+
+test                 description   absolute   operations   ratio with
+number                             time       per second   test0
+
+ 0  "int32_t goto loop unroll 1"   0.06 sec   1122.81 M     1.00
+ 1  "int32_t goto loop unroll 2"   0.03 sec   2064.52 M     0.54
+ 2  "int32_t goto loop unroll 3"   0.02 sec   2666.67 M     0.42
+ 3  "int32_t goto loop unroll 4"   0.02 sec   2782.61 M     0.40
+ 4  "int32_t goto loop unroll 5"   0.02 sec   2782.61 M     0.40
+ 5  "int32_t goto loop unroll 6"   0.02 sec   2909.09 M     0.39
+ 6  "int32_t goto loop unroll 7"   0.02 sec   2782.61 M     0.40
+ 7  "int32_t goto loop unroll 8"   0.02 sec   2666.67 M     0.42
+ 8  "int32_t goto loop unroll 9"   0.02 sec   2666.67 M     0.42
+ 9 "int32_t goto loop unroll 10"   0.02 sec   2782.61 M     0.40
+10 "int32_t goto loop unroll 11"   0.02 sec   2782.61 M     0.40
+11 "int32_t goto loop unroll 12"   0.02 sec   2782.61 M     0.40
+12 "int32_t goto loop unroll 13"   0.02 sec   2909.09 M     0.39
+13 "int32_t goto loop unroll 14"   0.02 sec   2782.61 M     0.40
+14 "int32_t goto loop unroll 15"   0.03 sec   2560.00 M     0.44
+15 "int32_t goto loop unroll 16"   0.02 sec   2782.61 M     0.40
+16 "int32_t goto loop unroll 17"   0.02 sec   2782.61 M     0.40
+17 "int32_t goto loop unroll 18"   0.02 sec   2782.61 M     0.40
+18 "int32_t goto loop unroll 19"   0.02 sec   2782.61 M     0.40
+19 "int32_t goto loop unroll 20"   0.02 sec   2909.09 M     0.39
+20 "int32_t goto loop unroll 21"   0.02 sec   2782.61 M     0.40
+21 "int32_t goto loop unroll 22"   0.02 sec   2782.61 M     0.40
+22 "int32_t goto loop unroll 23"   0.02 sec   2909.09 M     0.39
+23 "int32_t goto loop unroll 24"   0.02 sec   2782.61 M     0.40
+24 "int32_t goto loop unroll 25"   0.02 sec   2666.67 M     0.42
+25 "int32_t goto loop unroll 26"   0.02 sec   2666.67 M     0.42
+26 "int32_t goto loop unroll 27"   0.02 sec   2909.09 M     0.39
+27 "int32_t goto loop unroll 28"   0.02 sec   2782.61 M     0.40
+28 "int32_t goto loop unroll 29"   0.02 sec   2666.67 M     0.42
+29 "int32_t goto loop unroll 30"   0.02 sec   2666.67 M     0.42
+30 "int32_t goto loop unroll 31"   0.02 sec   2909.09 M     0.39
+31 "int32_t goto loop unroll 32"   0.02 sec   2782.61 M     0.40
+
+Total absolute time for int32_t goto loop unrolling: 0.78 sec
+
+test               description   absolute   operations   ratio with
+number                           time       per second   test0
+
+ 0  "double for loop unroll 1"   0.04 sec   355.56 M     1.00
+ 1  "double for loop unroll 2"   0.05 sec   347.83 M     1.02
+ 2  "double for loop unroll 3"   0.05 sec   333.33 M     1.07
+ 3  "double for loop unroll 4"   0.05 sec   347.83 M     1.02
+ 4  "double for loop unroll 5"   0.04 sec   355.56 M     1.00
+ 5  "double for loop unroll 6"   0.05 sec   347.83 M     1.02
+ 6  "double for loop unroll 7"   0.04 sec   355.56 M     1.00
+ 7  "double for loop unroll 8"   0.04 sec   363.64 M     0.98
+ 8  "double for loop unroll 9"   0.04 sec   355.56 M     1.00
+ 9 "double for loop unroll 10"   0.04 sec   355.56 M     1.00
+10 "double for loop unroll 11"   0.04 sec   363.64 M     0.98
+11 "double for loop unroll 12"   0.04 sec   355.56 M     1.00
+12 "double for loop unroll 13"   0.04 sec   363.64 M     0.98
+13 "double for loop unroll 14"   0.04 sec   355.56 M     1.00
+14 "double for loop unroll 15"   0.04 sec   363.64 M     0.98
+15 "double for loop unroll 16"   0.04 sec   363.64 M     0.98
+16 "double for loop unroll 17"   0.04 sec   355.56 M     1.00
+17 "double for loop unroll 18"   0.04 sec   363.64 M     0.98
+18 "double for loop unroll 19"   0.04 sec   363.64 M     0.98
+19 "double for loop unroll 20"   0.04 sec   363.64 M     0.98
+20 "double for loop unroll 21"   0.04 sec   363.64 M     0.98
+21 "double for loop unroll 22"   0.04 sec   355.56 M     1.00
+22 "double for loop unroll 23"   0.04 sec   363.64 M     0.98
+23 "double for loop unroll 24"   0.04 sec   363.64 M     0.98
+24 "double for loop unroll 25"   0.04 sec   355.56 M     1.00
+25 "double for loop unroll 26"   0.04 sec   363.64 M     0.98
+26 "double for loop unroll 27"   0.04 sec   363.64 M     0.98
+27 "double for loop unroll 28"   0.04 sec   363.64 M     0.98
+28 "double for loop unroll 29"   0.04 sec   363.64 M     0.98
+29 "double for loop unroll 30"   0.04 sec   363.64 M     0.98
+30 "double for loop unroll 31"   0.04 sec   363.64 M     0.98
+31 "double for loop unroll 32"   0.04 sec   355.56 M     1.00
+
+Total absolute time for double for loop unrolling: 1.43 sec
+
+test                 description   absolute   operations   ratio with
+number                             time       per second   test0
+
+ 0  "double while loop unroll 1"   0.04 sec   363.64 M     1.00
+ 1  "double while loop unroll 2"   0.05 sec   340.43 M     1.07
+ 2  "double while loop unroll 3"   0.05 sec   347.83 M     1.05
+ 3  "double while loop unroll 4"   0.05 sec   347.83 M     1.05
+ 4  "double while loop unroll 5"   0.05 sec   347.83 M     1.05
+ 5  "double while loop unroll 6"   0.05 sec   347.83 M     1.05
+ 6  "double while loop unroll 7"   0.04 sec   355.56 M     1.02
+ 7  "double while loop unroll 8"   0.04 sec   363.64 M     1.00
+ 8  "double while loop unroll 9"   0.04 sec   355.56 M     1.02
+ 9 "double while loop unroll 10"   0.04 sec   363.64 M     1.00
+10 "double while loop unroll 11"   0.04 sec   355.56 M     1.02
+11 "double while loop unroll 12"   0.04 sec   355.56 M     1.02
+12 "double while loop unroll 13"   0.04 sec   363.64 M     1.00
+13 "double while loop unroll 14"   0.04 sec   363.64 M     1.00
+14 "double while loop unroll 15"   0.05 sec   347.83 M     1.05
+15 "double while loop unroll 16"   0.04 sec   363.64 M     1.00
+16 "double while loop unroll 17"   0.04 sec   363.64 M     1.00
+17 "double while loop unroll 18"   0.04 sec   363.64 M     1.00
+18 "double while loop unroll 19"   0.04 sec   355.56 M     1.02
+19 "double while loop unroll 20"   0.04 sec   363.64 M     1.00
+20 "double while loop unroll 21"   0.04 sec   363.64 M     1.00
+21 "double while loop unroll 22"   0.04 sec   363.64 M     1.00
+22 "double while loop unroll 23"   0.04 sec   363.64 M     1.00
+23 "double while loop unroll 24"   0.04 sec   363.64 M     1.00
+24 "double while loop unroll 25"   0.04 sec   363.64 M     1.00
+25 "double while loop unroll 26"   0.04 sec   355.56 M     1.02
+26 "double while loop unroll 27"   0.04 sec   363.64 M     1.00
+27 "double while loop unroll 28"   0.04 sec   363.64 M     1.00
+28 "double while loop unroll 29"   0.04 sec   363.64 M     1.00
+29 "double while loop unroll 30"   0.04 sec   363.64 M     1.00
+30 "double while loop unroll 31"   0.04 sec   363.64 M     1.00
+31 "double while loop unroll 32"   0.04 sec   363.64 M     1.00
+
+Total absolute time for double while loop unrolling: 1.43 sec
+
+test              description   absolute   operations   ratio with
+number                          time       per second   test0
+
+ 0  "double do loop unroll 1"   0.05 sec   340.43 M     1.00
+ 1  "double do loop unroll 2"   0.05 sec   347.83 M     0.98
+ 2  "double do loop unroll 3"   0.04 sec   355.56 M     0.96
+ 3  "double do loop unroll 4"   0.05 sec   347.83 M     0.98
+ 4  "double do loop unroll 5"   0.04 sec   355.56 M     0.96
+ 5  "double do loop unroll 6"   0.05 sec   347.83 M     0.98
+ 6  "double do loop unroll 7"   0.04 sec   355.56 M     0.96
+ 7  "double do loop unroll 8"   0.04 sec   355.56 M     0.96
+ 8  "double do loop unroll 9"   0.04 sec   355.56 M     0.96
+ 9 "double do loop unroll 10"   0.04 sec   363.64 M     0.94
+10 "double do loop unroll 11"   0.04 sec   355.56 M     0.96
+11 "double do loop unroll 12"   0.04 sec   363.64 M     0.94
+12 "double do loop unroll 13"   0.04 sec   355.56 M     0.96
+13 "double do loop unroll 14"   0.04 sec   363.64 M     0.94
+14 "double do loop unroll 15"   0.04 sec   363.64 M     0.94
+15 "double do loop unroll 16"   0.04 sec   355.56 M     0.96
+16 "double do loop unroll 17"   0.04 sec   355.56 M     0.96
+17 "double do loop unroll 18"   0.04 sec   363.64 M     0.94
+18 "double do loop unroll 19"   0.04 sec   363.64 M     0.94
+19 "double do loop unroll 20"   0.04 sec   363.64 M     0.94
+20 "double do loop unroll 21"   0.04 sec   355.56 M     0.96
+21 "double do loop unroll 22"   0.04 sec   363.64 M     0.94
+22 "double do loop unroll 23"   0.04 sec   363.64 M     0.94
+23 "double do loop unroll 24"   0.04 sec   363.64 M     0.94
+24 "double do loop unroll 25"   0.04 sec   363.64 M     0.94
+25 "double do loop unroll 26"   0.04 sec   363.64 M     0.94
+26 "double do loop unroll 27"   0.04 sec   363.64 M     0.94
+27 "double do loop unroll 28"   0.04 sec   355.56 M     0.96
+28 "double do loop unroll 29"   0.04 sec   363.64 M     0.94
+29 "double do loop unroll 30"   0.04 sec   363.64 M     0.94
+30 "double do loop unroll 31"   0.04 sec   355.56 M     0.96
+31 "double do loop unroll 32"   0.04 sec   363.64 M     0.94
+
+Total absolute time for double do loop unrolling: 1.43 sec
+
+test                description   absolute   operations   ratio with
+number                            time       per second   test0
+
+ 0  "double goto loop unroll 1"   0.05 sec   340.43 M     1.00
+ 1  "double goto loop unroll 2"   0.05 sec   347.83 M     0.98
+ 2  "double goto loop unroll 3"   0.04 sec   355.56 M     0.96
+ 3  "double goto loop unroll 4"   0.05 sec   347.83 M     0.98
+ 4  "double goto loop unroll 5"   0.05 sec   347.83 M     0.98
+ 5  "double goto loop unroll 6"   0.04 sec   355.56 M     0.96
+ 6  "double goto loop unroll 7"   0.04 sec   355.56 M     0.96
+ 7  "double goto loop unroll 8"   0.04 sec   355.56 M     0.96
+ 8  "double goto loop unroll 9"   0.04 sec   355.56 M     0.96
+ 9 "double goto loop unroll 10"   0.04 sec   363.64 M     0.94
+10 "double goto loop unroll 11"   0.04 sec   355.56 M     0.96
+11 "double goto loop unroll 12"   0.04 sec   363.64 M     0.94
+12 "double goto loop unroll 13"   0.04 sec   355.56 M     0.96
+13 "double goto loop unroll 14"   0.04 sec   363.64 M     0.94
+14 "double goto loop unroll 15"   0.04 sec   363.64 M     0.94
+15 "double goto loop unroll 16"   0.04 sec   363.64 M     0.94
+16 "double goto loop unroll 17"   0.04 sec   355.56 M     0.96
+17 "double goto loop unroll 18"   0.04 sec   355.56 M     0.96
+18 "double goto loop unroll 19"   0.04 sec   363.64 M     0.94
+19 "double goto loop unroll 20"   0.04 sec   363.64 M     0.94
+20 "double goto loop unroll 21"   0.04 sec   363.64 M     0.94
+21 "double goto loop unroll 22"   0.04 sec   363.64 M     0.94
+22 "double goto loop unroll 23"   0.04 sec   355.56 M     0.96
+23 "double goto loop unroll 24"   0.04 sec   363.64 M     0.94
+24 "double goto loop unroll 25"   0.04 sec   363.64 M     0.94
+25 "double goto loop unroll 26"   0.04 sec   363.64 M     0.94
+26 "double goto loop unroll 27"   0.04 sec   363.64 M     0.94
+27 "double goto loop unroll 28"   0.04 sec   363.64 M     0.94
+28 "double goto loop unroll 29"   0.04 sec   355.56 M     0.96
+29 "double goto loop unroll 30"   0.04 sec   363.64 M     0.94
+30 "double goto loop unroll 31"   0.04 sec   363.64 M     0.94
+31 "double goto loop unroll 32"   0.04 sec   363.64 M     0.94
+
+Total absolute time for double goto loop unrolling: 1.43 sec

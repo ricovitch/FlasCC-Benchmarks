@@ -1,0 +1,14 @@
+machine.exe
+
+##Start machine report version 1.0
+##Compiler
+Microsoft VisualC++ version 1600
+Compiling for Windows 32 bit
+##Target CPU
+Compiled for x86 32bit
+Compiled for PentiumII
+##Physical CPU
+Little Endian
+##Machine
+##Operating System
+##End machine report

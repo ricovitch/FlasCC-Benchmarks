@@ -1,0 +1,185 @@
+FLASH (manufacturer=Google Windows, OS=Windows 7, playerType=PlugIn 64bits, version=WIN 11,1,102,55)
+simple_types_loop_invariant 25000
+
+test                          description   absolute   operations   ratio with
+number                                      time       per second   test0
+
+ 0                  "int8_t variable add"   1.57 sec   127.39 M     1.00
+ 1          "int8_t variable add hoisted"   1.30 sec   154.32 M     0.83
+ 2        "int8_t multiple variable adds"   1.62 sec   123.53 M     1.03
+ 3             "int8_t variable subtract"   1.58 sec   126.82 M     1.00
+ 4   "int8_t multiple variable subtracts"   2.31 sec   86.77 M     1.47
+ 5             "int8_t variable multiply"   1.58 sec   126.58 M     1.01
+ 6  "int8_t multiple variable multiplies"   1.50 sec   133.07 M     0.96
+ 7 "int8_t multiple variable multiplies2"   1.63 sec   122.47 M     1.04
+ 8               "int8_t variable divide"   1.74 sec   115.27 M     1.11
+ 9     "int8_t multiple variable divides"   4.71 sec   42.51 M     3.00
+10    "int8_t multiple variable divides2"   1.54 sec   129.62 M     0.98
+11       "int8_t multiple variable mixed"   1.74 sec   114.74 M     1.11
+12                  "int8_t variable and"   1.59 sec   125.87 M     1.01
+13         "int8_t multiple variable and"   1.51 sec   132.80 M     0.96
+14                   "int8_t variable or"   1.58 sec   126.18 M     1.01
+15          "int8_t multiple variable or"   1.50 sec   133.51 M     0.95
+16                  "int8_t variable xor"   1.59 sec   125.47 M     1.02
+17         "int8_t multiple variable xor"   1.50 sec   133.60 M     0.95
+
+Total absolute time for int8_t loop invariant: 32.08 sec
+
+test                           description   absolute   operations   ratio with
+number                                       time       per second   test0
+
+ 0                  "uint8_t variable add"   1.60 sec   124.84 M     1.00
+ 1          "uint8_t variable add hoisted"   1.32 sec   151.63 M     0.82
+ 2        "uint8_t multiple variable adds"   1.62 sec   123.23 M     1.01
+ 3             "uint8_t variable subtract"   1.61 sec   123.84 M     1.01
+ 4   "uint8_t multiple variable subtracts"   2.37 sec   84.53 M     1.48
+ 5             "uint8_t variable multiply"   1.58 sec   126.42 M     0.99
+ 6  "uint8_t multiple variable multiplies"   1.50 sec   133.24 M     0.94
+ 7 "uint8_t multiple variable multiplies2"   1.55 sec   129.28 M     0.97
+ 8               "uint8_t variable divide"   2.25 sec   89.01 M     1.40
+ 9     "uint8_t multiple variable divides"   5.17 sec   38.66 M     3.23
+10    "uint8_t multiple variable divides2"   1.55 sec   129.12 M     0.97
+11       "uint8_t multiple variable mixed"   1.75 sec   114.09 M     1.09
+12                  "uint8_t variable and"   1.57 sec   127.23 M     0.98
+13         "uint8_t multiple variable and"   1.50 sec   133.69 M     0.93
+14                   "uint8_t variable or"   1.57 sec   127.31 M     0.98
+15          "uint8_t multiple variable or"   1.50 sec   133.16 M     0.94
+16                  "uint8_t variable xor"   1.59 sec   125.63 M     0.99
+17         "uint8_t multiple variable xor"   1.49 sec   134.32 M     0.93
+
+Total absolute time for uint8_t loop invariant: 33.10 sec
+
+test                           description   absolute   operations   ratio with
+number                                       time       per second   test0
+
+ 0                  "int16_t variable add"   1.41 sec   141.44 M     1.00
+ 1          "int16_t variable add hoisted"   1.11 sec   180.34 M     0.78
+ 2        "int16_t multiple variable adds"   1.28 sec   156.25 M     0.91
+ 3             "int16_t variable subtract"   1.39 sec   143.88 M     0.98
+ 4   "int16_t multiple variable subtracts"   2.10 sec   95.24 M     1.49
+ 5             "int16_t variable multiply"   1.34 sec   149.70 M     0.94
+ 6  "int16_t multiple variable multiplies"   1.30 sec   153.26 M     0.92
+ 7 "int16_t multiple variable multiplies2"   1.39 sec   143.88 M     0.98
+ 8               "int16_t variable divide"   1.57 sec   127.47 M     1.11
+ 9     "int16_t multiple variable divides"   4.63 sec   43.20 M     3.27
+10    "int16_t multiple variable divides2"   1.35 sec   148.15 M     0.95
+11       "int16_t multiple variable mixed"   1.54 sec   129.45 M     1.09
+12                  "int16_t variable and"   1.40 sec   143.37 M     0.99
+13         "int16_t multiple variable and"   1.41 sec   142.05 M     1.00
+14                   "int16_t variable or"   1.40 sec   143.37 M     0.99
+15          "int16_t multiple variable or"   1.40 sec   142.96 M     0.99
+16                  "int16_t variable xor"   1.40 sec   142.96 M     0.99
+17         "int16_t multiple variable xor"   1.34 sec   149.03 M     0.95
+
+Total absolute time for int16_t loop invariant: 28.76 sec
+
+test                            description   absolute   operations   ratio with
+number                                        time       per second   test0
+
+ 0                  "uint16_t variable add"   1.40 sec   142.45 M     1.00
+ 1          "uint16_t variable add hoisted"   1.19 sec   167.93 M     0.85
+ 2        "uint16_t multiple variable adds"   1.27 sec   156.99 M     0.91
+ 3             "uint16_t variable subtract"   1.41 sec   142.15 M     1.00
+ 4   "uint16_t multiple variable subtracts"   2.11 sec   94.70 M     1.50
+ 5             "uint16_t variable multiply"   1.33 sec   150.04 M     0.95
+ 6  "uint16_t multiple variable multiplies"   1.33 sec   150.83 M     0.94
+ 7 "uint16_t multiple variable multiplies2"   1.29 sec   155.04 M     0.92
+ 8               "uint16_t variable divide"   2.06 sec   96.95 M     1.47
+ 9     "uint16_t multiple variable divides"   5.17 sec   38.71 M     3.68
+10    "uint16_t multiple variable divides2"   1.35 sec   148.48 M     0.96
+11       "uint16_t multiple variable mixed"   1.54 sec   129.79 M     1.10
+12                  "uint16_t variable and"   1.41 sec   141.44 M     1.01
+13         "uint16_t multiple variable and"   1.42 sec   140.85 M     1.01
+14                   "uint16_t variable or"   1.40 sec   142.86 M     1.00
+15          "uint16_t multiple variable or"   1.44 sec   139.28 M     1.02
+16                  "uint16_t variable xor"   1.41 sec   142.05 M     1.00
+17         "uint16_t multiple variable xor"   1.40 sec   143.06 M     1.00
+
+Total absolute time for uint16_t loop invariant: 29.93 sec
+
+test                           description   absolute   operations   ratio with
+number                                       time       per second   test0
+
+ 0                  "int32_t variable add"   1.16 sec   172.12 M     1.00
+ 1          "int32_t variable add hoisted"   1.12 sec   178.57 M     0.96
+ 2        "int32_t multiple variable adds"   1.22 sec   164.47 M     1.05
+ 3             "int32_t variable subtract"   1.18 sec   169.06 M     1.02
+ 4   "int32_t multiple variable subtracts"   1.95 sec   102.35 M     1.68
+ 5             "int32_t variable multiply"   1.38 sec   145.35 M     1.18
+ 6  "int32_t multiple variable multiplies"   1.40 sec   143.16 M     1.20
+ 7 "int32_t multiple variable multiplies2"   1.12 sec   178.25 M     0.97
+ 8               "int32_t variable divide"   1.55 sec   129.28 M     1.33
+ 9     "int32_t multiple variable divides"   4.42 sec   45.30 M     3.80
+10    "int32_t multiple variable divides2"   1.33 sec   150.38 M     1.14
+11       "int32_t multiple variable mixed"   1.54 sec   129.62 M     1.33
+12                  "int32_t variable and"   1.34 sec   149.70 M     1.15
+13         "int32_t multiple variable and"   1.42 sec   140.85 M     1.22
+14                   "int32_t variable or"   1.34 sec   149.37 M     1.15
+15          "int32_t multiple variable or"   1.44 sec   138.99 M     1.24
+16                  "int32_t variable xor"   1.34 sec   149.59 M     1.15
+17         "int32_t multiple variable xor"   1.43 sec   140.06 M     1.23
+
+Total absolute time for int32_t loop invariant: 27.66 sec
+
+test                            description   absolute   operations   ratio with
+number                                        time       per second   test0
+
+ 0                  "uint32_t variable add"   1.14 sec   175.90 M     1.00
+ 1          "uint32_t variable add hoisted"   1.12 sec   178.57 M     0.99
+ 2        "uint32_t multiple variable adds"   1.28 sec   156.13 M     1.13
+ 3             "uint32_t variable subtract"   1.14 sec   175.44 M     1.00
+ 4   "uint32_t multiple variable subtracts"   1.88 sec   106.27 M     1.66
+ 5             "uint32_t variable multiply"   1.41 sec   141.64 M     1.24
+ 6  "uint32_t multiple variable multiplies"   1.39 sec   143.68 M     1.22
+ 7 "uint32_t multiple variable multiplies2"   1.13 sec   176.83 M     0.99
+ 8               "uint32_t variable divide"   1.89 sec   105.88 M     1.66
+ 9     "uint32_t multiple variable divides"   6.40 sec   31.24 M     5.63
+10    "uint32_t multiple variable divides2"   1.34 sec   149.59 M     1.18
+11       "uint32_t multiple variable mixed"   1.46 sec   137.27 M     1.28
+12                  "uint32_t variable and"   1.33 sec   150.04 M     1.17
+13         "uint32_t multiple variable and"   1.43 sec   139.66 M     1.26
+14                   "uint32_t variable or"   1.34 sec   149.37 M     1.18
+15          "uint32_t multiple variable or"   1.43 sec   139.76 M     1.26
+16                  "uint32_t variable xor"   1.31 sec   152.56 M     1.15
+17         "uint32_t multiple variable xor"   1.44 sec   138.89 M     1.27
+
+Total absolute time for uint32_t loop invariant: 29.87 sec
+
+// int64 : delai d'execution Flash (60sec) dépassé pour 25000 itérations
+// uint64 : delai d'execution Flash (60sec) dépassé pour 25000 itérations
+
+test                         description   absolute   operations   ratio with
+number                                     time       per second   test0
+
+ 0                  "float variable add"   2.46 sec   81.20 M     1.00
+ 1          "float variable add hoisted"   1.51 sec   132.63 M     0.61
+ 2        "float multiple variable adds"   5.07 sec   39.49 M     2.06
+ 3             "float variable subtract"   2.45 sec   81.67 M     0.99
+ 4   "float multiple variable subtracts"   5.17 sec   38.69 M     2.10
+ 5             "float variable multiply"   2.53 sec   78.93 M     1.03
+ 6  "float multiple variable multiplies"   5.26 sec   38.04 M     2.13
+ 7 "float multiple variable multiplies2"   2.50 sec   80.16 M     1.01
+ 8               "float variable divide"   2.57 sec   77.85 M     1.04
+ 9     "float multiple variable divides"   6.53 sec   30.62 M     2.65
+10    "float multiple variable divides2"   2.45 sec   81.67 M     0.99
+11       "float multiple variable mixed"   3.16 sec   63.23 M     1.28
+
+Total absolute time for float loop invariant: 41.65 sec
+
+test                          description   absolute   operations   ratio with
+number                                      time       per second   test0
+
+ 0                  "double variable add"   1.56 sec   127.96 M     1.00
+ 1          "double variable add hoisted"   1.19 sec   167.50 M     0.76
+ 2        "double multiple variable adds"   2.42 sec   82.71 M     1.55
+ 3             "double variable subtract"   1.56 sec   127.88 M     1.00
+ 4   "double multiple variable subtracts"   2.36 sec   84.60 M     1.51
+ 5             "double variable multiply"   1.63 sec   122.77 M     1.04
+ 6  "double multiple variable multiplies"   2.50 sec   79.97 M     1.60
+ 7 "double multiple variable multiplies2"   1.57 sec   127.63 M     1.00
+ 8               "double variable divide"   1.66 sec   120.70 M     1.06
+ 9     "double multiple variable divides"   4.25 sec   47.11 M     2.72
+10    "double multiple variable divides2"   1.54 sec   129.70 M     0.99
+11       "double multiple variable mixed"   1.83 sec   109.41 M     1.17
+
+Total absolute time for double loop invariant: 24.07 sec

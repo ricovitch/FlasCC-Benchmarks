@@ -1,0 +1,409 @@
+simple_types_constant_folding.exe 100000
+
+test                         description   absolute   operations   ratio with
+number                                     time       per second   test0
+
+ 0                     "int8_t constant"   0.00 sec    1.#J M     -1.#J
+ 1                "int8_t add constants"   0.00 sec    1.#J M     -1.#J
+ 2           "int8_t subtract constants"   0.00 sec    1.#J M     -1.#J
+ 3           "int8_t multiply constants"   0.00 sec   800000.00 M     1.#J
+ 4             "int8_t divide constants"   0.00 sec    1.#J M     -1.#J
+ 5                "int8_t mod constants"   0.00 sec    1.#J M     -1.#J
+ 6              "int8_t equal constants"   0.00 sec    1.#J M     -1.#J
+ 7           "int8_t notequal constants"   0.00 sec   800000.00 M     1.#J
+ 8       "int8_t greater than constants"   0.00 sec    1.#J M     -1.#J
+ 9          "int8_t less than constants"   0.00 sec    1.#J M     -1.#J
+10 "int8_t greater than equal constants"   0.00 sec   800000.00 M     1.#J
+11    "int8_t less than equal constants"   0.00 sec    1.#J M     -1.#J
+12                "int8_t and constants"   0.00 sec    1.#J M     -1.#J
+13                 "int8_t or constants"   0.00 sec    1.#J M     -1.#J
+14                "int8_t xor constants"   0.00 sec    1.#J M     -1.#J
+
+Total absolute time for int8_t simple constant folding: 0.00 sec
+
+test                         description   absolute   operations   ratio with
+number                                     time       per second   test0
+
+ 0                 "int8_t constant add"   0.04 sec   2222.22 M     1.00
+ 1       "int8_t multiple constant adds"   0.03 sec   2758.62 M     0.81
+ 2            "int8_t constant subtract"   0.03 sec   2758.62 M     0.81
+ 3  "int8_t multiple constant subtracts"   0.03 sec   2758.62 M     0.81
+ 4            "int8_t constant multiply"   0.10 sec   792.08 M     2.81
+ 5 "int8_t multiple constant multiplies"   0.10 sec   792.08 M     2.81
+ 6  "int8_t multiple constant multiply2"   0.03 sec   2857.14 M     0.78
+ 7              "int8_t constant divide"   0.13 sec   620.16 M     3.58
+ 8    "int8_t multiple constant divides"   0.39 sec   204.60 M     10.86
+ 9    "int8_t multiple constant divide2"   0.03 sec   2857.14 M     0.78
+10      "int8_t multiple constant mixed"   0.06 sec   1403.51 M     1.58
+11                 "int8_t constant and"   0.07 sec   1111.11 M     2.00
+12        "int8_t multiple constant and"   0.07 sec   1081.08 M     2.06
+13                  "int8_t constant or"   0.06 sec   1311.48 M     1.69
+14         "int8_t multiple constant or"   0.06 sec   1290.32 M     1.72
+15                 "int8_t constant xor"   0.06 sec   1311.48 M     1.69
+16        "int8_t multiple constant xor"   0.06 sec   1333.33 M     1.67
+
+Total absolute time for int8_t constant folding: 1.35 sec
+
+test                          description   absolute   operations   ratio with
+number                                      time       per second   test0
+
+ 0                     "uint8_t constant"   0.00 sec    1.#J M     -1.#J
+ 1                "uint8_t add constants"   0.00 sec    1.#J M     -1.#J
+ 2           "uint8_t subtract constants"   0.00 sec    1.#J M     -1.#J
+ 3           "uint8_t multiply constants"   0.00 sec    1.#J M     -1.#J
+ 4             "uint8_t divide constants"   0.00 sec    1.#J M     -1.#J
+ 5                "uint8_t mod constants"   0.00 sec   800000.00 M     1.#J
+ 6              "uint8_t equal constants"   0.00 sec    1.#J M     -1.#J
+ 7           "uint8_t notequal constants"   0.00 sec    1.#J M     -1.#J
+ 8       "uint8_t greater than constants"   0.00 sec    1.#J M     -1.#J
+ 9          "uint8_t less than constants"   0.00 sec    1.#J M     -1.#J
+10 "uint8_t greater than equal constants"   0.00 sec    1.#J M     -1.#J
+11    "uint8_t less than equal constants"   0.00 sec    1.#J M     -1.#J
+12                "uint8_t and constants"   0.00 sec    1.#J M     -1.#J
+13                 "uint8_t or constants"   0.00 sec    1.#J M     -1.#J
+14                "uint8_t xor constants"   0.00 sec   800000.00 M     1.#J
+
+Total absolute time for uint8_t simple constant folding: 0.00 sec
+
+test                          description   absolute   operations   ratio with
+number                                      time       per second   test0
+
+ 0                 "uint8_t constant add"   0.03 sec   2857.14 M     1.00
+ 1       "uint8_t multiple constant adds"   0.03 sec   2857.14 M     1.00
+ 2            "uint8_t constant subtract"   0.03 sec   2580.65 M     1.11
+ 3  "uint8_t multiple constant subtracts"   0.03 sec   2857.14 M     1.00
+ 4            "uint8_t constant multiply"   0.13 sec   629.92 M     4.54
+ 5 "uint8_t multiple constant multiplies"   0.11 sec   754.72 M     3.79
+ 6  "uint8_t multiple constant multiply2"   0.03 sec   2666.67 M     1.07
+ 7              "uint8_t constant divide"   0.13 sec   610.69 M     4.68
+ 8    "uint8_t multiple constant divides"   0.36 sec   224.72 M     12.71
+ 9    "uint8_t multiple constant divide2"   0.03 sec   2857.14 M     1.00
+10      "uint8_t multiple constant mixed"   0.05 sec   1568.63 M     1.82
+11                 "uint8_t constant and"   0.06 sec   1250.00 M     2.29
+12        "uint8_t multiple constant and"   0.07 sec   1230.77 M     2.32
+13                  "uint8_t constant or"   0.07 sec   1230.77 M     2.32
+14         "uint8_t multiple constant or"   0.06 sec   1269.84 M     2.25
+15                 "uint8_t constant xor"   0.07 sec   1230.77 M     2.32
+16        "uint8_t multiple constant xor"   0.08 sec   1012.66 M     2.82
+
+Total absolute time for uint8_t constant folding: 1.34 sec
+
+test                          description   absolute   operations   ratio with
+number                                      time       per second   test0
+
+ 0                     "int16_t constant"   0.00 sec    1.#J M     -1.#J
+ 1                "int16_t add constants"   0.00 sec    1.#J M     -1.#J
+ 2           "int16_t subtract constants"   0.00 sec    1.#J M     -1.#J
+ 3           "int16_t multiply constants"   0.00 sec    1.#J M     -1.#J
+ 4             "int16_t divide constants"   0.00 sec   800000.00 M     1.#J
+ 5                "int16_t mod constants"   0.00 sec    1.#J M     -1.#J
+ 6              "int16_t equal constants"   0.00 sec    1.#J M     -1.#J
+ 7           "int16_t notequal constants"   0.00 sec    1.#J M     -1.#J
+ 8       "int16_t greater than constants"   0.00 sec    1.#J M     -1.#J
+ 9          "int16_t less than constants"   0.00 sec    1.#J M     -1.#J
+10 "int16_t greater than equal constants"   0.00 sec    1.#J M     -1.#J
+11    "int16_t less than equal constants"   0.00 sec    1.#J M     -1.#J
+12                "int16_t and constants"   0.00 sec   800000.00 M     1.#J
+13                 "int16_t or constants"   0.00 sec    1.#J M     -1.#J
+14                "int16_t xor constants"   0.00 sec    1.#J M     -1.#J
+
+Total absolute time for int16_t simple constant folding: 0.00 sec
+
+test                          description   absolute   operations   ratio with
+number                                      time       per second   test0
+
+ 0                 "int16_t constant add"   0.03 sec   2857.14 M     1.00
+ 1       "int16_t multiple constant adds"   0.03 sec   2580.65 M     1.11
+ 2            "int16_t constant subtract"   0.05 sec   1739.13 M     1.64
+ 3  "int16_t multiple constant subtracts"   0.03 sec   2857.14 M     1.00
+ 4            "int16_t constant multiply"   0.10 sec   808.08 M     3.54
+ 5 "int16_t multiple constant multiplies"   0.10 sec   824.74 M     3.46
+ 6  "int16_t multiple constant multiply2"   0.04 sec   2000.00 M     1.43
+ 7              "int16_t constant divide"   0.13 sec   629.92 M     4.54
+ 8    "int16_t multiple constant divides"   0.41 sec   196.56 M     14.54
+ 9    "int16_t multiple constant divide2"   0.03 sec   2857.14 M     1.00
+10      "int16_t multiple constant mixed"   0.03 sec   2666.67 M     1.07
+11                 "int16_t constant and"   0.05 sec   1702.13 M     1.68
+12        "int16_t multiple constant and"   0.05 sec   1702.13 M     1.68
+13                  "int16_t constant or"   0.05 sec   1600.00 M     1.79
+14         "int16_t multiple constant or"   0.05 sec   1702.13 M     1.68
+15                 "int16_t constant xor"   0.05 sec   1702.13 M     1.68
+16        "int16_t multiple constant xor"   0.05 sec   1702.13 M     1.68
+
+Total absolute time for int16_t constant folding: 1.25 sec
+
+test                           description   absolute   operations   ratio with
+number                                       time       per second   test0
+
+ 0                     "uint16_t constant"   0.00 sec    1.#J M     -1.#J
+ 1                "uint16_t add constants"   0.00 sec    1.#J M     -1.#J
+ 2           "uint16_t subtract constants"   0.00 sec    1.#J M     -1.#J
+ 3           "uint16_t multiply constants"   0.00 sec    1.#J M     -1.#J
+ 4             "uint16_t divide constants"   0.00 sec    1.#J M     -1.#J
+ 5                "uint16_t mod constants"   0.00 sec    1.#J M     -1.#J
+ 6              "uint16_t equal constants"   0.00 sec    1.#J M     -1.#J
+ 7           "uint16_t notequal constants"   0.00 sec    1.#J M     -1.#J
+ 8       "uint16_t greater than constants"   0.00 sec    1.#J M     -1.#J
+ 9          "uint16_t less than constants"   0.00 sec   800000.00 M     1.#J
+10 "uint16_t greater than equal constants"   0.00 sec    1.#J M     -1.#J
+11    "uint16_t less than equal constants"   0.00 sec    1.#J M     -1.#J
+12                "uint16_t and constants"   0.00 sec    1.#J M     -1.#J
+13                 "uint16_t or constants"   0.00 sec    1.#J M     -1.#J
+14                "uint16_t xor constants"   0.00 sec    1.#J M     -1.#J
+
+Total absolute time for uint16_t simple constant folding: 0.00 sec
+
+test                           description   absolute   operations   ratio with
+number                                       time       per second   test0
+
+ 0                 "uint16_t constant add"   0.03 sec   2857.14 M     1.00
+ 1       "uint16_t multiple constant adds"   0.03 sec   2758.62 M     1.04
+ 2            "uint16_t constant subtract"   0.03 sec   2857.14 M     1.00
+ 3  "uint16_t multiple constant subtracts"   0.03 sec   2758.62 M     1.04
+ 4            "uint16_t constant multiply"   0.12 sec   645.16 M     4.43
+ 5 "uint16_t multiple constant multiplies"   0.10 sec   808.08 M     3.54
+ 6  "uint16_t multiple constant multiply2"   0.03 sec   2758.62 M     1.04
+ 7              "uint16_t constant divide"   0.13 sec   615.38 M     4.64
+ 8    "uint16_t multiple constant divides"   0.33 sec   241.69 M     11.82
+ 9    "uint16_t multiple constant divide2"   0.03 sec   2666.67 M     1.07
+10      "uint16_t multiple constant mixed"   0.03 sec   2758.62 M     1.04
+11                 "uint16_t constant and"   0.05 sec   1632.65 M     1.75
+12        "uint16_t multiple constant and"   0.05 sec   1600.00 M     1.79
+13                  "uint16_t constant or"   0.05 sec   1702.13 M     1.68
+14         "uint16_t multiple constant or"   0.05 sec   1600.00 M     1.79
+15                 "uint16_t constant xor"   0.05 sec   1702.13 M     1.68
+16        "uint16_t multiple constant xor"   0.05 sec   1632.65 M     1.75
+
+Total absolute time for uint16_t constant folding: 1.18 sec
+
+test                          description   absolute   operations   ratio with
+number                                      time       per second   test0
+
+ 0                     "int32_t constant"   0.00 sec    1.#J M     -1.#J
+ 1                "int32_t add constants"   0.00 sec    1.#J M     -1.#J
+ 2           "int32_t subtract constants"   0.00 sec    1.#J M     -1.#J
+ 3           "int32_t multiply constants"   0.00 sec    1.#J M     -1.#J
+ 4             "int32_t divide constants"   0.00 sec    1.#J M     -1.#J
+ 5                "int32_t mod constants"   0.00 sec    1.#J M     -1.#J
+ 6              "int32_t equal constants"   0.00 sec    1.#J M     -1.#J
+ 7           "int32_t notequal constants"   0.00 sec    1.#J M     -1.#J
+ 8       "int32_t greater than constants"   0.00 sec    1.#J M     -1.#J
+ 9          "int32_t less than constants"   0.00 sec    1.#J M     -1.#J
+10 "int32_t greater than equal constants"   0.00 sec   800000.00 M     1.#J
+11    "int32_t less than equal constants"   0.00 sec    1.#J M     -1.#J
+12                "int32_t and constants"   0.00 sec    1.#J M     -1.#J
+13                 "int32_t or constants"   0.00 sec    1.#J M     -1.#J
+14                "int32_t xor constants"   0.00 sec    1.#J M     -1.#J
+
+Total absolute time for int32_t simple constant folding: 0.00 sec
+
+test                          description   absolute   operations   ratio with
+number                                      time       per second   test0
+
+ 0                 "int32_t constant add"   0.04 sec   2000.00 M     1.00
+ 1       "int32_t multiple constant adds"   0.03 sec   2666.67 M     0.75
+ 2            "int32_t constant subtract"   0.03 sec   2758.62 M     0.72
+ 3  "int32_t multiple constant subtracts"   0.03 sec   2758.62 M     0.72
+ 4            "int32_t constant multiply"   0.07 sec   1142.86 M     1.75
+ 5 "int32_t multiple constant multiplies"   0.06 sec   1333.33 M     1.50
+ 6  "int32_t multiple constant multiply2"   0.03 sec   2580.65 M     0.78
+ 7              "int32_t constant divide"   0.13 sec   634.92 M     3.15
+ 8    "int32_t multiple constant divides"   0.39 sec   203.05 M     9.85
+ 9    "int32_t multiple constant divide2"   0.03 sec   2758.62 M     0.72
+10      "int32_t multiple constant mixed"   0.03 sec   2666.67 M     0.75
+11                 "int32_t constant and"   0.04 sec   2000.00 M     1.00
+12        "int32_t multiple constant and"   0.04 sec   2000.00 M     1.00
+13                  "int32_t constant or"   0.04 sec   1951.22 M     1.02
+14         "int32_t multiple constant or"   0.04 sec   2000.00 M     1.00
+15                 "int32_t constant xor"   0.04 sec   2000.00 M     1.00
+16        "int32_t multiple constant xor"   0.04 sec   1951.22 M     1.02
+
+Total absolute time for int32_t constant folding: 1.11 sec
+
+test                           description   absolute   operations   ratio with
+number                                       time       per second   test0
+
+ 0                     "uint32_t constant"   0.00 sec    1.#J M     -1.#J
+ 1                "uint32_t add constants"   0.00 sec    1.#J M     -1.#J
+ 2           "uint32_t subtract constants"   0.00 sec    1.#J M     -1.#J
+ 3           "uint32_t multiply constants"   0.00 sec    1.#J M     -1.#J
+ 4             "uint32_t divide constants"   0.00 sec    1.#J M     -1.#J
+ 5                "uint32_t mod constants"   0.00 sec    1.#J M     -1.#J
+ 6              "uint32_t equal constants"   0.00 sec    1.#J M     -1.#J
+ 7           "uint32_t notequal constants"   0.00 sec    1.#J M     -1.#J
+ 8       "uint32_t greater than constants"   0.00 sec    1.#J M     -1.#J
+ 9          "uint32_t less than constants"   0.00 sec    1.#J M     -1.#J
+10 "uint32_t greater than equal constants"   0.00 sec    1.#J M     -1.#J
+11    "uint32_t less than equal constants"   0.00 sec    1.#J M     -1.#J
+12                "uint32_t and constants"   0.00 sec    1.#J M     -1.#J
+13                 "uint32_t or constants"   0.00 sec    1.#J M     -1.#J
+14                "uint32_t xor constants"   0.00 sec    1.#J M     -1.#J
+
+Total absolute time for uint32_t simple constant folding: 0.00 sec
+
+test                           description   absolute   operations   ratio with
+number                                       time       per second   test0
+
+ 0                 "uint32_t constant add"   0.04 sec   1904.76 M     1.00
+ 1       "uint32_t multiple constant adds"   0.03 sec   2666.67 M     0.71
+ 2            "uint32_t constant subtract"   0.03 sec   2758.62 M     0.69
+ 3  "uint32_t multiple constant subtracts"   0.03 sec   2758.62 M     0.69
+ 4            "uint32_t constant multiply"   0.06 sec   1311.48 M     1.45
+ 5 "uint32_t multiple constant multiplies"   0.06 sec   1311.48 M     1.45
+ 6  "uint32_t multiple constant multiply2"   0.03 sec   2666.67 M     0.71
+ 7              "uint32_t constant divide"   0.08 sec   963.86 M     1.98
+ 8    "uint32_t multiple constant divides"   0.18 sec   434.78 M     4.38
+ 9    "uint32_t multiple constant divide2"   0.03 sec   2580.65 M     0.74
+10      "uint32_t multiple constant mixed"   0.03 sec   2758.62 M     0.69
+11                 "uint32_t constant and"   0.04 sec   2000.00 M     0.95
+12        "uint32_t multiple constant and"   0.04 sec   2000.00 M     0.95
+13                  "uint32_t constant or"   0.04 sec   1904.76 M     1.00
+14         "uint32_t multiple constant or"   0.04 sec   2051.28 M     0.93
+15                 "uint32_t constant xor"   0.04 sec   2051.28 M     0.93
+16        "uint32_t multiple constant xor"   0.04 sec   2000.00 M     0.95
+
+Total absolute time for uint32_t constant folding: 0.85 sec
+
+test                          description   absolute   operations   ratio with
+number                                      time       per second   test0
+
+ 0                     "int64_t constant"   0.65 sec   1238.39 M     1.00
+ 1                "int64_t add constants"   0.64 sec   1244.17 M     1.00
+ 2           "int64_t subtract constants"   0.64 sec   1244.17 M     1.00
+ 3           "int64_t multiply constants"   0.64 sec   1244.17 M     1.00
+ 4             "int64_t divide constants"   0.64 sec   1244.17 M     1.00
+ 5                "int64_t mod constants"   0.64 sec   1244.17 M     1.00
+ 6              "int64_t equal constants"   0.00 sec    1.#J M     0.00
+ 7           "int64_t notequal constants"   0.64 sec   1246.11 M     0.99
+ 8       "int64_t greater than constants"   0.64 sec   1246.11 M     0.99
+ 9          "int64_t less than constants"   0.00 sec    1.#J M     0.00
+10 "int64_t greater than equal constants"   0.64 sec   1244.17 M     1.00
+11    "int64_t less than equal constants"   0.00 sec    1.#J M     0.00
+12                "int64_t and constants"   0.64 sec   1242.24 M     1.00
+13                 "int64_t or constants"   0.66 sec   1213.96 M     1.02
+14                "int64_t xor constants"   0.69 sec   1151.08 M     1.08
+
+Total absolute time for int64_t simple constant folding: 7.79 sec
+
+test                          description   absolute   operations   ratio with
+number                                      time       per second   test0
+
+ 0                 "int64_t constant add"   0.07 sec   1081.08 M     1.00
+ 1       "int64_t multiple constant adds"   0.07 sec   1095.89 M     0.99
+ 2            "int64_t constant subtract"   0.07 sec   1081.08 M     1.00
+ 3  "int64_t multiple constant subtracts"   0.07 sec   1081.08 M     1.00
+ 4            "int64_t constant multiply"   0.22 sec   372.09 M     2.91
+ 5 "int64_t multiple constant multiplies"   0.21 sec   382.78 M     2.82
+ 6  "int64_t multiple constant multiply2"   0.07 sec   1111.11 M     0.97
+ 7              "int64_t constant divide"   0.70 sec   114.78 M     9.42
+ 8    "int64_t multiple constant divides"   2.64 sec   30.35 M     35.62
+ 9    "int64_t multiple constant divide2"   0.07 sec   1126.76 M     0.96
+10      "int64_t multiple constant mixed"   0.11 sec   720.72 M     1.50
+11                 "int64_t constant and"   0.09 sec   898.88 M     1.20
+12        "int64_t multiple constant and"   0.09 sec   860.22 M     1.26
+13                  "int64_t constant or"   0.12 sec   672.27 M     1.61
+14         "int64_t multiple constant or"   0.12 sec   695.65 M     1.55
+15                 "int64_t constant xor"   0.12 sec   677.97 M     1.59
+16        "int64_t multiple constant xor"   0.12 sec   666.67 M     1.62
+
+Total absolute time for int64_t constant folding: 4.96 sec
+
+test                           description   absolute   operations   ratio with
+number                                       time       per second   test0
+
+ 0                     "uint64_t constant"   0.65 sec   1232.67 M     1.00
+ 1                "uint64_t add constants"   0.66 sec   1212.12 M     1.02
+ 2           "uint64_t subtract constants"   0.67 sec   1199.40 M     1.03
+ 3           "uint64_t multiply constants"   0.73 sec   1094.39 M     1.13
+ 4             "uint64_t divide constants"   0.69 sec   1152.74 M     1.07
+ 5                "uint64_t mod constants"   0.73 sec   1095.89 M     1.12
+ 6              "uint64_t equal constants"   0.00 sec    1.#J M     0.00
+ 7           "uint64_t notequal constants"   0.68 sec   1181.68 M     1.04
+ 8       "uint64_t greater than constants"   0.66 sec   1219.51 M     1.01
+ 9          "uint64_t less than constants"   0.00 sec    1.#J M     0.00
+10 "uint64_t greater than equal constants"   0.66 sec   1212.12 M     1.02
+11    "uint64_t less than equal constants"   0.00 sec    1.#J M     0.00
+12                "uint64_t and constants"   0.67 sec   1195.81 M     1.03
+13                 "uint64_t or constants"   0.70 sec   1142.86 M     1.08
+14                "uint64_t xor constants"   0.67 sec   1203.01 M     1.02
+
+Total absolute time for uint64_t simple constant folding: 8.16 sec
+
+test                           description   absolute   operations   ratio with
+number                                       time       per second   test0
+
+ 0                 "uint64_t constant add"   0.07 sec   1111.11 M     1.00
+ 1       "uint64_t multiple constant adds"   0.07 sec   1111.11 M     1.00
+ 2            "uint64_t constant subtract"   0.07 sec   1126.76 M     0.99
+ 3  "uint64_t multiple constant subtracts"   0.07 sec   1111.11 M     1.00
+ 4            "uint64_t constant multiply"   0.21 sec   373.83 M     2.97
+ 5 "uint64_t multiple constant multiplies"   0.21 sec   375.59 M     2.96
+ 6  "uint64_t multiple constant multiply2"   0.07 sec   1111.11 M     1.00
+ 7              "uint64_t constant divide"   0.63 sec   128.00 M     8.68
+ 8    "uint64_t multiple constant divides"   1.23 sec   65.31 M     17.01
+ 9    "uint64_t multiple constant divide2"   0.07 sec   1126.76 M     0.99
+10      "uint64_t multiple constant mixed"   0.11 sec   720.72 M     1.54
+11                 "uint64_t constant and"   0.09 sec   909.09 M     1.22
+12        "uint64_t multiple constant and"   0.09 sec   909.09 M     1.22
+13                  "uint64_t constant or"   0.12 sec   695.65 M     1.60
+14         "uint64_t multiple constant or"   0.12 sec   689.66 M     1.61
+15                 "uint64_t constant xor"   0.12 sec   689.66 M     1.61
+16        "uint64_t multiple constant xor"   0.12 sec   689.66 M     1.61
+
+Total absolute time for uint64_t constant folding: 3.46 sec
+
+test              description   absolute   operations   ratio with
+number                          time       per second   test0
+
+ 0           "float constant"   2.67 sec   299.74 M     1.00
+ 1      "float add constants"   2.63 sec   303.61 M     0.99
+ 2 "float subtract constants"   2.66 sec   300.75 M     1.00
+ 3 "float multiply constants"   2.70 sec   296.41 M     1.01
+ 4   "float divide constants"   2.65 sec   301.55 M     0.99
+
+Total absolute time for float simple constant folding: 13.32 sec
+
+test                        description   absolute   operations   ratio with
+number                                    time       per second   test0
+
+ 0                 "float constant add"   0.26 sec   313.73 M     1.00
+ 1       "float multiple constant adds"   0.26 sec   310.08 M     1.01
+ 2            "float constant subtract"   0.26 sec   311.28 M     1.01
+ 3  "float multiple constant subtracts"   0.26 sec   310.08 M     1.01
+ 4            "float constant multiply"   0.26 sec   307.69 M     1.02
+ 5 "float multiple constant multiplies"   0.26 sec   303.03 M     1.04
+ 6  "float multiple constant multiply2"   0.26 sec   311.28 M     1.01
+ 7              "float constant divide"   0.57 sec   139.62 M     2.25
+ 8    "float multiple constant divides"   1.17 sec   68.43 M     4.58
+ 9    "float multiple constant divide2"   0.26 sec   303.03 M     1.04
+10      "float multiple constant mixed"   0.26 sec   310.08 M     1.01
+
+Total absolute time for float constant folding: 4.07 sec
+
+test               description   absolute   operations   ratio with
+number                           time       per second   test0
+
+ 0           "double constant"   0.88 sec   911.16 M     1.00
+ 1      "double add constants"   0.90 sec   885.94 M     1.03
+ 2 "double subtract constants"   0.87 sec   921.66 M     0.99
+ 3 "double multiply constants"   0.85 sec   940.07 M     0.97
+ 4   "double divide constants"   0.86 sec   931.32 M     0.98
+
+Total absolute time for double simple constant folding: 4.36 sec
+
+test                         description   absolute   operations   ratio with
+number                                     time       per second   test0
+
+ 0                 "double constant add"   0.09 sec   930.23 M     1.00
+ 1       "double multiple constant adds"   0.14 sec   579.71 M     1.60
+ 2            "double constant subtract"   0.09 sec   930.23 M     1.00
+ 3  "double multiple constant subtracts"   0.14 sec   575.54 M     1.62
+ 4            "double constant multiply"   0.09 sec   919.54 M     1.01
+ 5 "double multiple constant multiplies"   0.23 sec   344.83 M     2.70
+ 6  "double multiple constant multiply2"   0.09 sec   869.57 M     1.07
+ 7              "double constant divide"   0.65 sec   123.08 M     7.56
+ 8    "double multiple constant divides"   1.18 sec   67.85 M     13.71
+ 9    "double multiple constant divide2"   0.09 sec   898.88 M     1.03
+10      "double multiple constant mixed"   0.09 sec   879.12 M     1.06
+
+Total absolute time for double constant folding: 2.87 sec

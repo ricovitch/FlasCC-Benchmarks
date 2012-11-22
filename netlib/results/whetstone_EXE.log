@@ -1,0 +1,32 @@
+Loops: 100000, Iterations: 1, Duration: 2 sec.
+C Converted Double Precision Whetstones: 5000.0 MIPS
+
+Loops: 100000, Iterations: 1, Duration: 1 sec.
+C Converted Double Precision Whetstones: 10000.0 MIPS
+
+Loops: 200000, Iterations: 1, Duration: 3 sec.
+C Converted Double Precision Whetstones: 6666.7 MIPS
+
+Loops: 200000, Iterations: 1, Duration: 2 sec.
+C Converted Double Precision Whetstones: 10000.0 MIPS
+
+Loops: 400000, Iterations: 1, Duration: 6 sec.
+C Converted Double Precision Whetstones: 6666.7 MIPS
+
+Loops: 400000, Iterations: 1, Duration: 5 sec.
+C Converted Double Precision Whetstones: 8000.0 MIPS
+
+Loops: 500000, Iterations: 1, Duration: 16 sec.
+C Converted Double Precision Whetstones: 3125.0 MIPS
+
+Loops: 500000, Iterations: 1, Duration: 16 sec.
+C Converted Double Precision Whetstones: 3125.0 MIPS
+
+Loops: 600000, Iterations: 1, Duration: 32 sec.
+C Converted Double Precision Whetstones: 1875.0 MIPS
+
+Loops: 600000, Iterations: 1, Duration: 32 sec.
+C Converted Double Precision Whetstones: 1875.0 MIPS
+
+Loops: 1000000, Iterations: 1, Duration: 96 sec.
+C Converted Double Precision Whetstones: 1041.7 MIPS

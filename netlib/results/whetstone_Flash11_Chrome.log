@@ -1,0 +1,13 @@
+FLASH (manufacturer=Google Windows, OS=Windows 7, playerType=PlugIn 64bits, version=WIN 11,1,102,55)
+
+Loops: 100000, Iterations: 1, Duration: 2 sec.
+C Converted Double Precision Whetstones: 5000.0 MIPS
+
+Loops: 100000, Iterations: 1, Duration: 2 sec.
+C Converted Double Precision Whetstones: 5000.0 MIPS
+
+Loops: 200000, Iterations: 1, Duration: 4 sec.
+C Converted Double Precision Whetstones: 5000.0 MIPS
+
+Loops: 200000, Iterations: 1, Duration: 5 sec.
+C Converted Double Precision Whetstones: 4000.0 MIPS

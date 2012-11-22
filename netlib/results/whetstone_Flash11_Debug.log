@@ -1,0 +1,13 @@
+FLASH (manufacturer=Adobe Windows, OS=Windows 7, playerType=PlugIn 64bits (DEBUG), version=WIN 11,1,102,55)
+
+Loops: 100000, Iterations: 1, Duration: 4 sec.
+C Converted Double Precision Whetstones: 2500.0 MIPS
+
+Loops: 100000, Iterations: 1, Duration: 3 sec.
+C Converted Double Precision Whetstones: 3333.3 MIPS
+
+Loops: 200000, Iterations: 1, Duration: 7 sec.
+C Converted Double Precision Whetstones: 2857.1 MIPS
+
+Loops: 200000, Iterations: 1, Duration: 8 sec.
+C Converted Double Precision Whetstones: 2500.0 MIPS

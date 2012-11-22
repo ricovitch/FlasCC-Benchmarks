@@ -1,0 +1,12 @@
+An attempt at setting up useful benchmarks for Adobe Alchemy (C/C++ to Flash compiler)
+
+C/C++ Benchmarks sources :
+http://stlab.adobe.com/performance/
+http://www.netlib.org/benchmark/
+
+STLAB :
+All benchmarks can be tested in Flash.
+
+NETLIB :
+whetstone can be tested, but only with low loopcount parameter.
+linpackc-new compiles, but i've been unable to get results in Flash, maybe just cause of execution time limit.

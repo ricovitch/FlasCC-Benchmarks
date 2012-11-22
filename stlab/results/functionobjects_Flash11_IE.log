@@ -1,0 +1,20 @@
+FLASH (manufacturer=Adobe Windows, OS=Windows 7, playerType=ActiveX 64bits, version=WIN 11,1,102,55)
+functionobjects 2000 5000
+
+test                                                description   absolute   operations   ratio with
+number                                                            time       per second   test0
+ 0                          "qsort array with function pointer"   2.88 sec    3.47 M     1.00
+ 1             "quicksort function array with function pointer"   2.11 sec    4.74 M     0.73
+ 2             "quicksort template array with function pointer"   2.07 sec    4.83 M     0.72
+ 3    "quicksort template array with template function pointer"   2.16 sec    4.63 M     0.75
+ 4                           "sort array with function pointer"   1.62 sec    6.18 M     0.56
+ 5        "quicksort template array with user-supplied functor"   2.09 sec    4.78 M     0.73
+ 6                      "sort array with user-supplied functor"   1.60 sec    6.26 M     0.55
+ 7 "quicksort template array with user-supplied inline functor"   2.06 sec    4.85 M     0.71
+ 8               "sort array with user-supplied inline functor"   1.58 sec    6.34 M     0.55
+ 9             "quicksort template array with standard functor"   2.07 sec    4.84 M     0.72
+ 10                           "sort array with standard functor"   1.60 sec    6.27 M     0.55
+ 11            "quicksort template array with native < operator"   2.10 sec    4.75 M     0.73
+ 12                          "sort array with native < operator"   1.60 sec    6.26 M     0.55
+ 
+Total absolute time for Function Objects: 25.53 sec

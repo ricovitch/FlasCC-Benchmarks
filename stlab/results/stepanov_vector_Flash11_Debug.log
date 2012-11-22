@@ -1,0 +1,66 @@
+FLASH (manufacturer=Adobe Windows, OS=Windows 7, playerType=PlugIn 64bits (DEBUG), version=WIN 11,1,102,55)
+stepanov_vector 150000
+
+test                            description   absolute   operations   ratio with
+number                                        time       per second   test0
+
+ 0                 "double pointer verify2"   1.83 sec   164.20 M     1.00
+ 1                 "double vector iterator"   1.88 sec   160.00 M     1.03
+ 2                 "double pointer reverse"   2.87 sec   104.68 M     1.57
+ 3         "double vector reverse_iterator"   2.80 sec   107.07 M     1.53
+ 4         "double vector iterator reverse"   2.88 sec   104.09 M     1.58
+ 5         "double pointer reverse reverse"   2.15 sec   139.73 M     1.18
+ 6 "double vector reverse_iterator reverse"   2.16 sec   139.15 M     1.18
+ 7 "double vector iterator reverse reverse"   2.11 sec   142.31 M     1.15
+
+Total absolute time for Vector accumulate: 18.66 sec
+
+Vector accumulate Penalty: 1.30
+
+test                                           description   absolute   operations   ratio with
+number                                                       time       per second   test0
+
+ 0                 "insertion_sort double pointer verify2"   2.40 sec    0.12 M     1.00
+ 1                 "insertion_sort double vector iterator"   2.26 sec    0.13 M     0.94
+ 2                 "insertion_sort double pointer reverse"   1.96 sec    0.15 M     0.81
+ 3         "insertion_sort double vector reverse_iterator"   1.98 sec    0.15 M     0.82
+ 4         "insertion_sort double vector iterator reverse"   1.96 sec    0.15 M     0.82
+ 5         "insertion_sort double pointer reverse reverse"   2.80 sec    0.11 M     1.16
+ 6 "insertion_sort double vector reverse_iterator reverse"   2.67 sec    0.11 M     1.11
+ 7 "insertion_sort double vector iterator reverse reverse"   2.74 sec    0.11 M     1.14
+
+Total absolute time for Vector Insertion Sort: 18.78 sec
+
+Vector Insertion Sort Penalty: 0.96
+
+test                                      description   absolute   operations   ratio with
+number                                                  time       per second   test0
+
+ 0                 "quicksort double pointer verify2"   0.81 sec    2.97 M     1.00
+ 1                 "quicksort double vector iterator"   0.92 sec    2.61 M     1.14
+ 2                 "quicksort double pointer reverse"   1.35 sec    1.78 M     1.67
+ 3         "quicksort double vector reverse_iterator"   1.38 sec    1.74 M     1.71
+ 4         "quicksort double vector iterator reverse"   1.38 sec    1.74 M     1.70
+ 5         "quicksort double pointer reverse reverse"   1.37 sec    1.75 M     1.69
+ 6 "quicksort double vector reverse_iterator reverse"   1.35 sec    1.78 M     1.67
+ 7 "quicksort double vector iterator reverse reverse"   1.38 sec    1.74 M     1.70
+
+Total absolute time for Vector Quicksort: 9.93 sec
+
+Vector Quicksort Penalty: 1.60
+
+test                                      description   absolute   operations   ratio with
+number                                                  time       per second   test0
+
+ 0                 "heap_sort double pointer verify2"   0.82 sec    2.94 M     1.00
+ 1                 "heap_sort double vector iterator"   1.19 sec    2.01 M     1.46
+ 2                 "heap_sort double pointer reverse"   1.36 sec    1.76 M     1.67
+ 3         "heap_sort double vector reverse_iterator"   1.35 sec    1.77 M     1.66
+ 4         "heap_sort double vector iterator reverse"   1.35 sec    1.77 M     1.66
+ 5         "heap_sort double pointer reverse reverse"   1.74 sec    1.38 M     2.13
+ 6 "heap_sort double vector reverse_iterator reverse"   1.71 sec    1.40 M     2.10
+ 7 "heap_sort double vector iterator reverse reverse"   1.71 sec    1.41 M     2.09
+
+Total absolute time for Vector Heap Sort: 11.24 sec
+
+Vector Heap Sort Penalty: 1.81

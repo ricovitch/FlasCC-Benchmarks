@@ -1,0 +1,20 @@
+functionobjects.exe 2000 5000 
+
+test                                                description   absolute   operations   ratio with
+number                                                            time       per second   test0
+
+ 0                          "qsort array with function pointer"   1.85 sec    5.40 M     1.00
+ 1             "quicksort function array with function pointer"   1.44 sec    6.93 M     0.78
+ 2             "quicksort template array with function pointer"   1.51 sec    6.64 M     0.81
+ 3    "quicksort template array with template function pointer"   1.53 sec    6.52 M     0.83
+ 4                           "sort array with function pointer"   1.40 sec    7.15 M     0.75
+ 5        "quicksort template array with user-supplied functor"   1.01 sec    9.85 M     0.55
+ 6                      "sort array with user-supplied functor"   0.75 sec   13.42 M     0.40
+ 7 "quicksort template array with user-supplied inline functor"   0.97 sec   10.29 M     0.52
+ 8               "sort array with user-supplied inline functor"   0.75 sec   13.40 M     0.40
+ 9             "quicksort template array with standard functor"   0.96 sec   10.43 M     0.52
+10                           "sort array with standard functor"   0.75 sec   13.42 M     0.40
+11            "quicksort template array with native < operator"   0.84 sec   11.86 M     0.45
+12                          "sort array with native < operator"   0.75 sec   13.28 M     0.41
+
+Total absolute time for Function Objects: 14.51 sec
