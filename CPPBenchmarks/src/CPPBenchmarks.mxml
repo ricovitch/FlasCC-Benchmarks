@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx"
+			   width="100%" height="100%"
+			   creationComplete="creationCompleteHandler(event)">
+	
+	<fx:Script>
+		<![CDATA[
+			import cmodule.functionobjects.CLibInit;
+			import cmodule.linpackc_new.CLibInit;
+			import cmodule.loop_unroll.CLibInit;
+			import cmodule.machine.CLibInit;
+			import cmodule.simple_types_constant_folding.CLibInit;
+			import cmodule.simple_types_loop_invariant.CLibInit;
+			import cmodule.stepanov_abstraction.CLibInit;
+			import cmodule.stepanov_vector.CLibInit;
+			import cmodule.whetstone.CLibInit;
+			
+			import flash.utils.getTimer;
+			
+			import mx.events.FlexEvent;
+			
+			private var _functionobjects_lib:Object;
+			private var _loop_unroll_lib:Object;
+			private var _machine_lib:Object;
+			private var _simple_types_constant_folding_lib:Object;
+			private var _simple_types_loop_invariant_lib:Object;
+			private var _stepanov_abstraction_lib:Object;
+			private var _stepanov_vector_lib:Object;
+			private var _linpackc_new_lib:Object;
+			private var _whetstone_lib:Object;
+			
+			private function onButtonClick (evt:MouseEvent) : void
+			{
+				// clear stdSprite text
+				clearStdSprite();
+				
+				switch (evt.currentTarget) {
+					// ------------------ STLAB ---------------------
+					// functionobjects
+					case functionobjectsBT :
+						if (!_functionobjects_lib) {
+							var loader_functionobjects:cmodule.functionobjects.CLibInit = new cmodule.functionobjects.CLibInit;
+							loader_functionobjects.setSprite (stdSprite);
+							_functionobjects_lib = loader_functionobjects.init();
+						}
+						_functionobjects_lib.benchmark (2000, 5000);
+						break;
+					
+					// loop_unroll
+					case loop_unrollBT :
+						if (!_loop_unroll_lib) {
+							var loader_loop_unroll:cmodule.loop_unroll.CLibInit = new cmodule.loop_unroll.CLibInit;
+							loader_loop_unroll.setSprite (stdSprite);
+							_loop_unroll_lib = loader_loop_unroll.init();
+						}
+						_loop_unroll_lib.benchmark (8000);
+						break;
+					
+					// FIXME machine ? no output ?
+					case machineBT :
+						if (!_machine_lib) {
+							var loader_machine:cmodule.machine.CLibInit = new cmodule.machine.CLibInit;
+							loader_machine.setSprite (stdSprite);
+							_machine_lib = loader_machine.init();
+						}
+						_machine_lib.benchmark ();
+						break;
+					
+					// simple_types_constant_folding
+					case simple_types_constant_foldingBT :
+						if (!_simple_types_constant_folding_lib) {
+							var loader_simple_types_constant_folding:cmodule.simple_types_constant_folding.CLibInit = new cmodule.simple_types_constant_folding.CLibInit;
+							loader_simple_types_constant_folding.setSprite (stdSprite);
+							_simple_types_constant_folding_lib = loader_simple_types_constant_folding.init();
+						}
+						var simple_types_constant_folding_iterations:int = 100000;
+						switch (simple_types_constant_foldingCB.selectedItem) {
+							case "int8" :
+								_simple_types_constant_folding_lib.bench_int8_t (simple_types_constant_folding_iterations);
+								break;
+							case "uint8" :
+								_simple_types_constant_folding_lib.bench_uint8_t (simple_types_constant_folding_iterations);
+								break;
+							case "int16" :
+								_simple_types_constant_folding_lib.bench_int16_t (simple_types_constant_folding_iterations);
+								break;
+							case "uint16" :
+								_simple_types_constant_folding_lib.bench_uint16_t (simple_types_constant_folding_iterations);
+								break;
+							case "int32" :
+								_simple_types_constant_folding_lib.bench_int32_t (simple_types_constant_folding_iterations);
+								break;
+							case "uint32" :
+								_simple_types_constant_folding_lib.bench_uint32_t (simple_types_constant_folding_iterations);
+								break;
+							case "int64" :
+								_simple_types_constant_folding_lib.bench_int64_t (simple_types_constant_folding_iterations);
+								break;
+							case "uint64" :
+								_simple_types_constant_folding_lib.bench_uint64_t (simple_types_constant_folding_iterations);
+								break;
+							case "float" :
+								_simple_types_constant_folding_lib.bench_float (50000);
+								break;
+							case "double" :
+								_simple_types_constant_folding_lib.bench_double (simple_types_constant_folding_iterations);
+								break;
+						}
+						break;
+				
+					// simple_types_loop_invariant
+					case simple_types_loop_invariantBT :
+						if (!_simple_types_loop_invariant_lib) {
+							var loader_simple_types_loop_invariant:cmodule.simple_types_loop_invariant.CLibInit = new cmodule.simple_types_loop_invariant.CLibInit;
+							loader_simple_types_loop_invariant.setSprite (stdSprite);
+							_simple_types_loop_invariant_lib = loader_simple_types_loop_invariant.init();
+						}
+						var simple_types_loop_invariant_iterations:int = 25000;
+						switch (simple_types_loop_invariantCB.selectedItem) {
+							case "int8" :
+								_simple_types_loop_invariant_lib.bench_int8_t (simple_types_loop_invariant_iterations);
+								break;
+							case "uint8" :
+								_simple_types_loop_invariant_lib.bench_uint8_t (simple_types_loop_invariant_iterations);
+								break;
+							case "int16" :
+								_simple_types_loop_invariant_lib.bench_int16_t (simple_types_loop_invariant_iterations);
+								break;
+							case "uint16" :
+								_simple_types_loop_invariant_lib.bench_uint16_t (simple_types_loop_invariant_iterations);
+								break;
+							case "int32" :
+								_simple_types_loop_invariant_lib.bench_int32_t (simple_types_loop_invariant_iterations);
+								break;
+							case "uint32" :
+								_simple_types_loop_invariant_lib.bench_uint32_t (simple_types_loop_invariant_iterations);
+								break;
+							case "int64" :
+								_simple_types_loop_invariant_lib.bench_int64_t (simple_types_loop_invariant_iterations);
+								break;
+							case "uint64" :
+								_simple_types_loop_invariant_lib.bench_uint64_t (simple_types_loop_invariant_iterations);
+								break;
+							case "float" :
+								_simple_types_loop_invariant_lib.bench_float (simple_types_loop_invariant_iterations);
+								break;
+							case "double" :
+								_simple_types_loop_invariant_lib.bench_double (simple_types_loop_invariant_iterations);
+								break;
+						}
+						break;
+					
+					// stepanov_abstraction
+					case stepanov_abstractionBT :
+						if (!_stepanov_abstraction_lib) {
+							var loader_stepanov_abstraction:cmodule.stepanov_abstraction.CLibInit = new cmodule.stepanov_abstraction.CLibInit;
+							loader_stepanov_abstraction.setSprite (stdSprite);
+							_stepanov_abstraction_lib = loader_stepanov_abstraction.init();
+						}
+						var stepanov_abstraction_iterations:int = 100000;
+						switch (stepanov_abstractionCB.selectedItem) {
+							case "accumulate" :
+								_stepanov_abstraction_lib.bench_accumulate (stepanov_abstraction_iterations);
+								break;
+							case "insertion_sort" :
+								_stepanov_abstraction_lib.bench_insertion_sort (stepanov_abstraction_iterations);
+								break;
+							case "quicksort" :
+								_stepanov_abstraction_lib.bench_quicksort (30); // VERY SLOW : 30 iterations max
+								break;
+							case "heap_sort" :
+								_stepanov_abstraction_lib.bench_heap_sort (10000); // SLOW : 10000 iterations max
+								break;
+						}
+						break;
+					
+					// stepanov_vector
+					case stepanov_vectorBT :
+						if (!_stepanov_vector_lib) {
+							var loader_stepanov_vector:cmodule.stepanov_vector.CLibInit = new cmodule.stepanov_vector.CLibInit;
+							loader_stepanov_vector.setSprite (stdSprite);
+							_stepanov_vector_lib = loader_stepanov_vector.init();
+						}
+						_stepanov_vector_lib.bench (150000);
+						break;
+					
+					// ------------------ NETLIB ---------------------
+					// linpack c new
+					case linpackc_newBT :
+						if (!_linpackc_new_lib) {
+							var loader_linpackc_new:cmodule.linpackc_new.CLibInit = new cmodule.linpackc_new.CLibInit;
+							loader_linpackc_new.setSprite (stdSprite);
+							_linpackc_new_lib = loader_linpackc_new.init();
+						}
+						_linpackc_new_lib.benchmark (1);
+						break;
+					
+					// whetstone
+					case whetstoneBT :
+						if (!_whetstone_lib) {
+							var loader_whetstone:cmodule.whetstone.CLibInit = new cmodule.whetstone.CLibInit;
+							loader_whetstone.setSprite (stdSprite);
+							_whetstone_lib = loader_whetstone.init();
+						}
+						_whetstone_lib.benchmark (int(whetstoneCB.selectedItem));
+						break;
+				}
+				
+				updateStdSprite ();
+			}
+			
+			protected function creationCompleteHandler(event:FlexEvent):void
+			{
+				var infos:String = "FLASH (manufacturer=" + Capabilities.manufacturer + ", OS=" + Capabilities.os + ", ";
+				infos += "playerType=" + Capabilities.playerType;
+				if (Capabilities.supports64BitProcesses) infos += " 64bits";
+				else infos += " 32bits";
+				if (Capabilities.isDebugger) infos += " (DEBUG)";
+				infos += ", version=" + Capabilities.version + ")";
+				infoText.text = infos;
+			}
+			
+			// clear alchemy STD Sprite text
+			private function clearStdSprite () : void
+			{
+				var i:int, len:int = stdSprite.numChildren;
+				var child:DisplayObject;
+				for (i=0; i<len; i++) {
+					child = stdSprite.getChildAt(i);
+					if (child is TextField) (child as TextField).text = "";
+				}
+			}
+			
+			// allow STD Sprite to scroll
+			private function updateStdSprite () : void
+			{
+				var i:int, len:int = stdSprite.numChildren;
+				var child:DisplayObject;
+				for (i=0; i<len; i++) {
+					child = stdSprite.getChildAt(i);
+					if (child is TextField) {
+						stdSprite.width = child.width;
+						stdSprite.height = child.height;
+					}
+				}
+			}
+		]]>
+	</fx:Script>
+	
+	<s:VGroup width="100%" height="100%" paddingBottom="10" paddingLeft="10" paddingRight="10" paddingTop="10">
+		<s:HGroup gap="15">
+			<s:Button id="functionobjectsBT" label="functionobjects" click="onButtonClick(event)" />
+			<s:Button id="loop_unrollBT" label="loop_unroll" click="onButtonClick(event)" />
+			<s:Button id="machineBT" label="machine" click="onButtonClick(event)" />
+			<s:Button id="stepanov_abstractionBT" label="stepanov_abstraction" click="onButtonClick(event)" />
+			<s:ComboBox id="stepanov_abstractionCB" width="100" selectedItem="accumulate" >
+				<s:dataProvider>
+					<mx:ArrayList>
+						<fx:String>accumulate</fx:String>
+						<fx:String>insertion_sort</fx:String>
+						<fx:String>quicksort</fx:String>
+						<fx:String>heap_sort</fx:String>
+					</mx:ArrayList>
+				</s:dataProvider>
+			</s:ComboBox>
+			<s:Button id="stepanov_vectorBT" label="stepanov_vector" click="onButtonClick(event)" />
+		</s:HGroup>
+		<s:HGroup gap="15">
+			<s:Button id="simple_types_constant_foldingBT" label="simple_types_constant_folding" click="onButtonClick(event)" />
+			<s:ComboBox id="simple_types_constant_foldingCB" width="80" selectedItem="int8" >
+				<s:dataProvider>
+					<mx:ArrayList>
+						<fx:String>int8</fx:String>
+						<fx:String>uint8</fx:String>
+						<fx:String>int16</fx:String>
+						<fx:String>uint16</fx:String>
+						<fx:String>int32</fx:String>
+						<fx:String>uint32</fx:String>
+						<fx:String>int64</fx:String>
+						<fx:String>uint64</fx:String>
+						<fx:String>float</fx:String>
+						<fx:String>double</fx:String>
+					</mx:ArrayList>
+				</s:dataProvider>
+			</s:ComboBox>
+			<s:Button id="simple_types_loop_invariantBT" label="simple_types_loop_invariant" click="onButtonClick(event)" />
+			<s:ComboBox id="simple_types_loop_invariantCB" width="80" selectedItem="int8" >
+				<s:dataProvider>
+					<mx:ArrayList>
+						<fx:String>int8</fx:String>
+						<fx:String>uint8</fx:String>
+						<fx:String>int16</fx:String>
+						<fx:String>uint16</fx:String>
+						<fx:String>int32</fx:String>
+						<fx:String>uint32</fx:String>
+						<fx:String>int64</fx:String>
+						<fx:String>uint64</fx:String>
+						<fx:String>float</fx:String>
+						<fx:String>double</fx:String>
+					</mx:ArrayList>
+				</s:dataProvider>
+			</s:ComboBox>
+		</s:HGroup>
+		<s:HGroup gap="15">
+			<s:Button id="linpackc_newBT" label="linpackc_new" click="onButtonClick(event)" enabled="false"/>
+			<s:Button id="whetstoneBT" label="whetstone" click="onButtonClick(event)"/>
+			<s:ComboBox id="whetstoneCB" width="80" selectedItem="100000" >
+				<s:dataProvider>
+					<mx:ArrayList>
+						<fx:String>100000</fx:String>
+						<fx:String>200000</fx:String>
+						<fx:String>400000</fx:String>
+						<fx:String>500000</fx:String>
+						<fx:String>600000</fx:String>
+						<fx:String>1000000</fx:String>
+					</mx:ArrayList>
+				</s:dataProvider>
+			</s:ComboBox>
+		</s:HGroup>
+		
+		<!-- OUTPUTS -->
+		<mx:Text id="infoText" width="100%" />
+		<s:Group width="100%" height="100%">
+			<s:Rect width="100%" height="100%">
+				<s:fill>
+					<s:SolidColor color="0xcccccc" />
+				</s:fill>
+			</s:Rect>
+			<s:Scroller width="100%" height="100%" verticalScrollPolicy="on" horizontalScrollPolicy="off">
+				<s:Group width="100%" height="100%" clipAndEnableScrolling="true">
+					<s:SpriteVisualElement id="stdSprite" />
+				</s:Group>
+			</s:Scroller>
+		</s:Group>
+	</s:VGroup>
+	
+</s:Application>
