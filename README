@@ -11,6 +11,6 @@ NETLIB :
 whetstone can be tested, but only with low loopcount parameter.
 linpackc-new compiles, but i've been unable to get results in Flash, maybe just cause of execution time limit.
 
-Here are my results with Alchemy Proto :
+Here are my results with Alchemy Proto (also in the results folder)
 Alchemy Benchmarks - STLAB Results.xlsx : https://docs.google.com/spreadsheet/ccc?key=0AuGZwZWm3Xv_dFBqX2tJU3owY2psVGlwcTFnSW1kd2c&hl=en_US#gid=0
 Alchemy Benchmarks - Whetstone Results.xlsx : https://docs.google.com/spreadsheet/ccc?key=0AuGZwZWm3Xv_dEJEV3g0TnNaUlJOdk0zTkstaGM2Ync&hl=en_US#gid=0
