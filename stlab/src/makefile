@@ -18,6 +18,10 @@
 
 INCLUDE = -I.
 
+# FLASCC
+FLASCC=/cygdrive/d/Tools/flascc/1.0.0/sdk
+CC=$(FLASCC)/usr/bin/gcc
+CXX=$(FLASCC)/usr/bin/g++
 
 # GCC
 #CC = /usr/bin/gcc
@@ -86,10 +90,8 @@ SUFFIXES:
 
 # remove all the stuff we build
 
-clean : 
-		rm -f *.o $(BINARIES)
-
-
+clean : rm -f *.o $(BINARIES)
+		
 # generate dependency listing from all the source files
 # used for double checking problems with headers
 # this does NOT go in the makefile
@@ -99,6 +101,17 @@ dependencies :   $(SOURCES)
 	$(CXX) $(DEPENDENCYFLAG) $(CPPFLAGS) $^
 
 
+#
+# FLASCC SWF versions
+#
+swf :
+	$(CXX) $(CPPFLAGS) -emit-swf machine.cpp -o machine.swf
+	$(CXX) $(CPPFLAGS) -emit-swf stepanov_abstraction.cpp -o stepanov_abstraction.swf
+	$(CXX) $(CPPFLAGS) -emit-swf stepanov_vector.cpp -o stepanov_vector.swf
+	$(CXX) $(CPPFLAGS) -emit-swf loop_unroll.cpp -o loop_unroll.swf
+	$(CXX) $(CPPFLAGS) -emit-swf simple_types_loop_invariant.cpp -o simple_types_loop_invariant.swf
+	$(CXX) $(CPPFLAGS) -emit-swf functionobjects.cpp -o functionobjects.swf
+	$(CXX) $(CPPFLAGS) -emit-swf simple_types_constant_folding.cpp -o simple_types_constant_folding.swf
 
 
 #
